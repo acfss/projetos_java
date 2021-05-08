@@ -68,8 +68,8 @@ public void consultValor(String nomeevento) {
 public Evento consultEvento(String nomeevento) {
 	for (Evento evento : listaevento) {
 		if (evento.getNomeevento().equals(nomeevento)) {
-			return evento;
-		}
+			System.out.println(evento);
+			}
 	}
 	return null;
 }

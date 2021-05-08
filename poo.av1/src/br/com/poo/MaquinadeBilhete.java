@@ -19,11 +19,11 @@ public class MaquinadeBilhete {
 		evento.addEvento("Festival do Outono", 20, 10, 2022, "Harmonia do Samba", local, 70);
 		
 		
-		//evento.consultEvento("Festival do Outono");
+		evento.consultEvento("Festival do Outono");
 		//evento.imprimirBusca("Festival do Outono");
 		
-		evento.comprarIngresso("Festival de Inverno", 30);
-		evento.ingressoDisp("Festival de Inverno");
+		//evento.comprarIngresso("Festival de Inverno", 30);
+		//evento.ingressoDisp("Festival de Inverno");
 		//evento.consultEventodisp();
 		//evento.comprarIngresso("Festival de Inverno", 15);
 		//evento.ingressoDisp("Festival de Inverno");
