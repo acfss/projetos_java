@@ -10,7 +10,6 @@ public class Peixe extends Animal {
 	public String toString() {
 		StringBuilder dados = new StringBuilder();
 		dados.append(super.toString());
-		dados.append("\n");
 		dados.append(caracteristica);
 		
 		return dados.toString();
