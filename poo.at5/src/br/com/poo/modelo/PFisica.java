@@ -8,6 +8,8 @@ public class PFisica extends Contribuinte {
 	}
 
 	public PFisica(String nome, double rendaBrt, String cpf) {
+		super (nome, rendaBrt);
+		this.cpf = cpf;
 	}
 
 	@Override
@@ -20,23 +22,23 @@ public class PFisica extends Contribuinte {
 
 	@Override
 		public double calcImposto() {
-			if (getRendaBrt() <= 1400.00) {
+			if (this.getRendaBrt() <= 1400.00) {
 				System.out.println("Isento de Imposto de Renda");
 			}
-			else if (getRendaBrt() >= 1400.01 && getRendaBrt() <= 2100.00) {
+			else if (this.getRendaBrt() >= 1400.01 && this.getRendaBrt() <= 2100.00) {
 				imposto = (getRendaBrt() * 0.10) - 100;
 				System.out.println("o Valor do Imposto é: " +imposto);
 			}
-			else if (getRendaBrt() >= 2100.01 && getRendaBrt() <= 2800.00) {
-				imposto = (getRendaBrt() * 0.15) - 270;
+			else if (this.getRendaBrt() >= 2100.01 && this.getRendaBrt() <= 2800.00) {
+				imposto = (this.getRendaBrt() * 0.15) - 270;
 				System.out.println("o Valor do Imposto é: " +imposto);
 				}
-			else if (getRendaBrt() >= 2800.01 && getRendaBrt() <= 3600.00) {
-				imposto = (getRendaBrt() * 0.25) - 500;
+			else if (this.getRendaBrt() >= 2800.01 && this.getRendaBrt() <= 3600.00) {
+				imposto = (this.getRendaBrt() * 0.25) - 500;
 				System.out.println("o Valor do Imposto é: " +imposto);
 		}
-			else if (getRendaBrt() >= 3600.01) {
-				imposto = (getRendaBrt() * 0.30) - 700;
+			else if (this.getRendaBrt() >= 3600.01) {
+				imposto = (this.getRendaBrt() * 0.30) - 700;
 				System.out.println("o Valor do Imposto é: " +imposto);
 			}
 	return 0;	
